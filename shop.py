@@ -49,12 +49,12 @@ while choice.option !=3:
                 foramted_total_cost = "{:.2f}".format(total_cost)
 
                 total_cost_vat = (total_cost * 1.23)
-                total_cost_vat = "{:.2f}".format(total_cost_vat)
+                fromated_total_cost_vat = "{:.2f}".format(total_cost_vat)
 
                 print('*' * 50)
                 print('You bought:\n' + str(apple.cart) +' Appels\n' + str(carrot.cart) + ' Carrots')
                 print('*' * 50)
-                print('Total cost will be:\n' + str(total_cost) + ' zl net\n' + 'It will be:\n' + str(total_cost_vat) + ' zl including VAT')
+                print('Total cost will be:\n' + str(foramted_total_cost) + ' zl net\n' + 'It will be:\n' + str(fromated_total_cost_vat) + ' zl including VAT')
 
         except ValueError:
             cls()
